@@ -167,7 +167,7 @@
   </style>
 </head>
 <body>
-  <button id="audioControl">Pause Music</button>
+  <button id="audioControl">Play Nasyid</button>
   <audio id="bgMusic" autoplay loop>
     <source src="bgm/nasyid.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -279,10 +279,10 @@
     controlBtn.addEventListener('click', () => {
       if (bgMusic.paused) {
         bgMusic.play();
-        controlBtn.innerText = 'Pause Music';
+        controlBtn.innerText = 'Pause Nasyid';
       } else {
         bgMusic.pause();
-        controlBtn.innerText = 'Play Music';
+        controlBtn.innerText = 'Play Nasyid';
       }
     });
   </script>
